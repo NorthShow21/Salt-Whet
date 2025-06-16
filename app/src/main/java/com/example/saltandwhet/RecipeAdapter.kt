@@ -1,5 +1,7 @@
 package com.example.saltandwhet
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -34,5 +36,13 @@ class RecipeAdapter(private val itemList: ArrayList<Recipe>) : RecyclerView.Adap
             .into(holder.itemImageView)
         holder.itemNameView.text = currentItem.itemName
         holder.itemDescView.text = currentItem.itemArea
+
+        // Set click listener
+        holder.itemView.setOnClickListener {
+            val context: Context = holder.itemView.context
+            val intent = Intent(context, DetailsActivity::class.java)
+            intent.putExtra("mealId", currentItem.idMeal)
+            context.startActivity(intent)
+        }
     }
 }

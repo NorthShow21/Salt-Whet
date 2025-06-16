@@ -53,7 +53,8 @@ class MainActivity : AppCompatActivity() {
                 val itemImage = itemObject.getString("strMealThumb")
                 val itemName = itemObject.getString("strMeal")
                 val itemArea = itemObject.getString("strArea")
-                itemList.add(Recipe(itemImage, itemName, itemArea))
+                val idMeal = itemObject.getString("idMeal")
+                itemList.add(Recipe(itemImage, itemName, itemArea, idMeal))
             }
         } catch(e: JSONException) {
             e.printStackTrace()
