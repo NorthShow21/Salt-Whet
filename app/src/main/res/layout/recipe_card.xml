@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#152232">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="16dp"-->
+<!--        android:orientation="vertical">-->
+
+<!--        &lt;!&ndash; Food photo &ndash;&gt;-->
+<!--        <ImageView-->
+<!--            android:id="@+id/imgFood"-->
+<!--            android:layout_width="72dp"-->
+<!--            android:layout_height="72dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            android:background="#152232" />-->
+
+<!--        &lt;!&ndash; Title &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvRecipeTitle"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Spaghetti Bolognese"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintStart_toEndOf="@id/imgFood"-->
+<!--            app:layout_constraintTop_toTopOf="@id/imgFood"-->
+<!--            android:layout_marginStart="16dp"/>-->
+
+<!--        &lt;!&ndash; Description &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvRecipeDesc"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="A classic Italian meat sauce served over pasta"-->
+<!--            android:textColor="#B0B0B0"-->
+<!--            android:textSize="12sp"-->
+<!--            app:layout_constraintStart_toStartOf="@id/tvRecipeTitle"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/tvRecipeTitle"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tvRecipeTitle"-->
+<!--            android:layout_marginTop="4dp"/>-->
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#121C2B"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        android:elevation="4dp">
+
+        <!-- Left Image -->
+        <ImageView
+            android:id="@+id/ivRecipeImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Recipe image" />
+
+        <!-- Right content: Title and Description -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvRecipeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spaghetti Bolognese"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/tvRecipeDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A classic Italian meat sauce served over pasta"
+                android:textColor="#AAB3C5"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
