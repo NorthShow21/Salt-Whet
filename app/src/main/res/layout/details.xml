@@ -24,7 +24,7 @@
             android:layout_margin="16dp"
             android:background="@drawable/circle_background"
             android:src="@android:drawable/ic_menu_close_clear_cancel"
-            android:tint="@android:color/white"
+            android:tint="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
